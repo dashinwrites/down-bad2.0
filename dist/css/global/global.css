@@ -1,0 +1,9 @@
+/*******************************
+    Global
+********************************/
+body {
+  background: var(--bg-primary);
+  font-size: var(--size-md);
+  line-height: 200%;
+  color: var(--text-primary);
+  font-family: var(--font-body); }

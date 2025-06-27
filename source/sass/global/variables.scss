@@ -2,9 +2,79 @@
     Variables
 ********************************/
 :root {
+    --font-body: 'Lato', sans-serif;
+    --font-head: 'UnifrakturMaguntia', cursive;
+    --head-accent: "Rouge Script", cursive;
+    --font-fa: 'Font Awesome 6 Pro';
+    --font-accent: 'LXGW WenKai Mono TC', monospace;
+
     --size-xs: 8px;
     --size-sm: 10px;
     --size-md: 12px;
     --size-lg: 14px;
     --size-xl: 16px;
+
+    --space-xs: 5px;
+    --space-sm: 10px;
+    --space-md: 15px;
+    --space-lg: 30px;
+    --space-xl: 60px;
+    
+    --bg-primary: rgb(27, 41, 44);
+    --bg-secondary: rgb(95, 124, 106);
+    --bg-tertiary: rgb(45, 45, 45);
+    --bg-quaternary: rgb(55, 55, 55);
+    --bg-overlay: rgba(18, 18, 18, 0.5);
+    --bg-gradient: linear-gradient(0deg,rgba(246, 219, 109, 1) 10%, rgba(162, 182, 200, 1) 90%);
+
+    --text-on-accent: var(--text-secondary);
+    --text-primary: rgb(240, 177, 95);
+    --text-secondary: rgb(245, 245, 245);
+
+    --border-primary: rgb(80, 80, 80);
+    --border-secondary: rgb(198, 198, 198);
+    
+    --bg-image: url(https://files.jcink.net/uploads2/wherethehellis/Background_Images/bg_default_min.jpg);
+    --bg-blend: hard-light;
+    --bg-opacity: 0.1;
+    --bg-position: center;
+    --image-filter: contrast(1.5) brightness(0.6); 
+
+    --size-alert-max-height: 80px;
+    --size-menu-height: 30px;
+    --size-menu-width: 50px;
+    --size-store-image: 24px;
+    --size-switcher-image: 50px;
+    --size-outline-visible: 300px;
+    --size-icon-square: 24px;
+    --size-fancy-input: 16px;
+    --size-single-aesthetic-width: 300px;
+    --size-columns-aesthetic-width: 400px;
+
+    --radius-sm: 3px;
+    --radius-standard: 4px;
+
+    --mountain1: 50, 50, 82;
+    --mountain2: 58, 108, 130; 
+    --mountain3: 58, 108, 130;
+    --mountain4: 53, 98, 119;
+    --mountain5: 53, 98, 119;
+    --mountain6: 40, 60, 67;
+    --mountain7: 40, 60, 67;
+    --mountain8: 27, 41, 44;
+    --mountain9: 27, 41, 44;
+    --mountain10: 27, 41, 44;
+    --mountain11: 27, 41, 44;
+    --mountain12: 27, 41, 44;
+    --mountain13: 27, 41, 44;
+    --mountain14: 27, 41, 44;
+    --mountain15: 27, 41, 44;
+    --mountain16: 27, 41, 44;
+    --mountain17: 27, 41, 44;
+    --mountain18: 27, 41, 44;
+    --mountain19: 27, 41, 44;
+    --mountain20: 27, 41, 44;
+    --mountain21: 27, 41, 44;
+    --mountain22: 27, 41, 44;
+    --mountain23: 27, 41, 44;
 }
