@@ -2,11 +2,11 @@
     Variables
 ********************************/
 :root {
-  --font-body: 'Lato', sans-serif;
-  --font-head: 'UnifrakturMaguntia', cursive;
+  --font-body: "Lato", sans-serif;
+  --font-head: "UnifrakturMaguntia", cursive;
   --head-accent: "Rouge Script", cursive;
-  --font-fa: 'Font Awesome 6 Pro';
-  --font-accent: 'LXGW WenKai Mono TC', monospace;
+  --font-fa: "Font Awesome 6 Pro";
+  --font-accent: "LXGW WenKai Mono TC", monospace;
   --size-xs: 8px;
   --size-sm: 10px;
   --size-md: 12px;
@@ -67,4 +67,5 @@
   --mountain20: 27, 41, 44;
   --mountain21: 27, 41, 44;
   --mountain22: 27, 41, 44;
-  --mountain23: 27, 41, 44; }
+  --mountain23: 27, 41, 44;
+}
