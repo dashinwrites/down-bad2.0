@@ -3,3 +3,15 @@
 /*******************************
     Navigation
 ********************************/
+
+#navstrip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--size-menu-height);
+    background-color: var(--bg-primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}

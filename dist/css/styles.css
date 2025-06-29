@@ -113,6 +113,9 @@ body {
   color: var(--text-primary);
   font-family: var(--font-body);
 }
+body a {
+  color: var(--text-secondary);
+}
 
 /*******************************
     Utilities
@@ -120,6 +123,24 @@ body {
 /*******************************
     Navigation
 ********************************/
+#navstrip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--size-menu-height);
+  background-color: var(--bg-primary);
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: flex-start;
+}
+
 /*******************************
     Header
 ********************************/
