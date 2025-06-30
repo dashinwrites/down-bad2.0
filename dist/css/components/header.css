@@ -2,8 +2,15 @@
     Header
 ********************************/
 .header {
+  position: relative;
   height: 75vh;
   background: var(--bg-gradient);
+  overflow: hidden;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .header--static {
   height: 20vh;
@@ -22,9 +29,9 @@
   position: absolute;
   top: 0;
   z-index: 0;
+  width: 100%;
 }
 .header h1 {
-  margin: 20px auto;
   color: var(--text-primary);
   letter-spacing: 0.05em;
   font-family: var(--font-head);
@@ -42,7 +49,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
 }
 .header #mountains .mountains1 {
   fill: rgba(var(--mountain1), 0);
@@ -67,49 +73,4 @@
 }
 .header #mountains .mountains8 {
   fill: rgba(var(--mountain8), 1);
-}
-.header #mountains .mountains9 {
-  fill: rgba(var(--mountain9), 1);
-}
-.header #mountains .mountains10 {
-  fill: crimson;
-}
-.header #mountains .mountains11 {
-  fill: rgba(var(--mountain11), 1);
-}
-.header #mountains .mountains12 {
-  fill: blue;
-}
-.header #mountains .mountains13 {
-  fill: rgba(var(--mountain13), 1);
-}
-.header #mountains .mountains14 {
-  fill: rgba(var(--mountain14), 1);
-}
-.header #mountains .mountains15 {
-  fill: rgba(var(--mountain15), 1);
-}
-.header #mountains .mountains16 {
-  fill: rgba(var(--mountain16), 1);
-}
-.header #mountains .mountains17 {
-  fill: rgba(var(--mountain17), 1);
-}
-.header #mountains .mountains18 {
-  fill: rgba(var(--mountain18), 1);
-}
-.header #mountains .mountains19 {
-  fill: rgba(var(--mountain19), 1);
-}
-.header #mountains .mountains20 {
-  fill: rgba(var(--mountain20), 1);
-}
-.header #mountains .mountains21 {
-  fill: rgba(var(--mountain21), 1);
-}
-.header #mountains .mountains22 {
-  fill: rgba(var(--mountain22), 1);
-}
-.header #mountains .mountains23 {
-  fill: rgba(var(--mountain23), 1);
 }
