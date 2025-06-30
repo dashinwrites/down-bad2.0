@@ -10,6 +10,7 @@ body {
     line-height: 200%;
     color: var(--text-primary);
     font-family: var(--font-body);
+    padding: calc(var(--size-menu) + var(--space-xs));
 
     a {
         color: var(--text-secondary);

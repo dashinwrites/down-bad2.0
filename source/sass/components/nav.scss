@@ -4,14 +4,129 @@
     Navigation
 ********************************/
 
-#navstrip {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: var(--size-menu-height);
-    background-color: var(--bg-primary);
-    width: 100%;
+.nav {
     display: flex;
+    position: fixed;
+    font-size: var(--size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: var(--bg-secondary);
     align-items: center;
-    justify-items: flex-start;
+    z-index: 10;
+
+    &--top,
+    &--bottom {
+        left: calc(var(--size-menu) - 1px);
+        width: calc(100% - var(--size-menu) + 1px);
+        height: var(--size-menu);
+        display: flex;
+        z-index: 11;
+    }
+
+    &--top {
+        top: 0;
+        border-bottom: 1px solid var(--border-secondary);
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: var(--border-primary);
+        }
+
+        &::before {
+            width: var(--size-menu);
+            flex: 0 0 var(--size-menu);
+            margin-left: calc(var(--size-menu) / -2);
+        }
+
+        &::after {
+            width: 100%;
+        }
+    }
+
+    #navstrip {
+            flex: 0 0 auto;
+            padding: 0 var(--space-sm);
+            border-left: 1px solid var(--border-primary);
+            border-right: 1px solid var(--border-primary);
+            height: max-content;
+            line-height: 160%;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: calc(100% - var(--size-menu));
+        }
+
+    &--left {
+        top: 0;
+        left: 0;
+        width: var(--size-menu);
+        height: 100vh;
+        flex-direction: column;
+        padding: calc(var(--size-menu) / 2) 0 0;
+        border-right: 1px solid var(--border-secondary);
+
+        @include mq-up(md) {
+            padding: calc(var(--size-menu) / 2) 0;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            background: var(--border-primary);
+        }
+
+        &::before {
+            height: calc(var(--size-menu) / 2);
+            flex: 0 0 calc(var(--size-menu) / 2);
+        }
+
+        &::after {
+            height: 100%;
+        }
+    }
+
+    &--right {
+        top: 0;
+        right: 0;
+        width: var(--size-menu);
+        height: 100vh;
+        flex-direction: column;
+        padding: calc(var(--size-menu) / 2) 0;
+        border-left: 1px solid var(--border-secondary);
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            background: var(--border-primary);
+        }
+
+        &::before {
+            height: 100%;
+        }
+
+        &::after {
+            height: calc(var(--size-menu) / 2);
+            flex: 0 0 calc(var(--size-menu) / 2);
+        }
+    }
+
+    &--bottom {
+        bottom: 0;
+        border-top: 1px solid var(--border-secondary);
+
+        &::before {
+            content: '';
+            display: block;
+            height: 1px;
+            background: var(--border-primary);
+            width: calc(100% + var(--size-menu));
+            margin: 0 calc(var(--size-menu) / -2);
+        }
+    }
 }

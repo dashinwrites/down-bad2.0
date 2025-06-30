@@ -34,8 +34,7 @@
   --bg-position: center;
   --image-filter: contrast(1.5) brightness(0.6);
   --size-alert-max-height: 80px;
-  --size-menu-height: 30px;
-  --size-menu-width: 50px;
+  --size-menu: 30px;
   --size-store-image: 24px;
   --size-switcher-image: 50px;
   --size-outline-visible: 300px;
