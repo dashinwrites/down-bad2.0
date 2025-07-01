@@ -226,3 +226,17 @@ if(pageType === 'store') {
     <a href="?act=store&code=edit_inventory" class="staffOnly">Edit Inventory</a></div></div>`;
     */
 }
+
+const staticHeader = document.querySelector('.header--static');
+  const headerHeight = window.innerHeight * 0.5; // 75vh
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    // Calculate how far into the header we’ve scrolled (0 to 1)
+    let progress = scrollY / headerHeight;
+    if (progress > 1) progress = 1;
+
+    // Fade out the text based on scroll progress
+    staticHeader.style.opacity = 1 - progress;
+  });

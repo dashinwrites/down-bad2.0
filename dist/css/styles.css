@@ -218,8 +218,8 @@ body a {
           justify-content: center;
 }
 .header--static {
-  height: 20vh;
   position: fixed;
+  text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -237,24 +237,46 @@ body a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: max(24vw - var(--size-menu-height) - 0.375 * (64vw - var(--size-menu-width)) / 2, 120px);
-  z-index: 2;
-  margin: 0 20px 0 calc(var(--space-xl) + var(--size-menu-width));
-  border: 1px solid red;
-  padding: 0 0 var(--space-sm) 20px;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  will-change: opacity;
 }
 .header #cloud {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 0;
-  width: 100%;
 }
 .header h1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--text-primary);
   letter-spacing: 0.05em;
   font-family: var(--font-head);
   font-weight: bold;
   font-size: 64px;
+  margin: 0;
+  line-height: 45%;
+  bottom: 80%;
 }
 .header .small {
   font-family: var(--head-accent);
@@ -262,6 +284,10 @@ body a {
   font-weight: normal;
   font-size: 30px;
   color: var(--text-secondary);
+}
+.header .title {
+  font-size: inherit;
+  left: 10px;
 }
 .header #mountains {
   position: absolute;
